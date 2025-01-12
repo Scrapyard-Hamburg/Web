@@ -1,6 +1,7 @@
 "use client";
 import Head from "next/head";
 import { Box, Card, Grid, Heading, Image, Link, Text } from "theme-ui";
+import * as Sentry from "@sentry/nextjs";
 
 const Nonprofit501c3 = () => {
   return <span style={{ fontVariantLigatures: "none" }}>501(c)(3)</span>;
@@ -52,6 +53,11 @@ const Backlink = () => (
 );
 
 export default function Home() {
+  Sentry.addBreadcrumb({
+    category: "nextjs",
+    message: "Loaded Homepage",
+    level: "info",
+  });
   return (
     <Box
       sx={{

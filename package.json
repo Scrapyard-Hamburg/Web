@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev --turbopack",
+    "dev": "next dev",
     "build": "next build",
     "start": "next start",
     "lint": "next lint"
@@ -13,6 +13,7 @@
     "@hackclub/theme": "^0.3.3",
     "@jackatdjl/djl-ui": "0.5.2-canary.13",
     "@next/mdx": "^15.1.4",
+    "@sentry/nextjs": "8",
     "leaflet": "^1.9.4",
     "next": "15.1.4",
     "react": "^19.0.0",
