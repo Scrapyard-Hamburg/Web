@@ -1,8 +1,6 @@
 "use client";
 import Head from "next/head";
 import { Box, Card, Grid, Heading, Image, Link, Text } from "theme-ui";
-import dynamic from "next/dynamic";
-const Map = dynamic(() => import("../components/Map"), { ssr: false });
 
 const Nonprofit501c3 = () => {
   return <span style={{ fontVariantLigatures: "none" }}>501(c)(3)</span>;
@@ -44,7 +42,7 @@ export default function Home() {
       }}
     >
       <Head>
-        <title>Scrapyard</title>
+        <title>Scrapyard Hamburg</title>
       </Head>
       <Flag />
       <Box
@@ -67,8 +65,8 @@ export default function Home() {
 
             objectFit: "contain",
           }}
-          src="/elements/wordmark.svg"
-          alt="Scrapyard"
+          src="/wordmark.svg"
+          alt="Scrapyard Hamburg Logo"
         />
         <Box
           sx={{
@@ -100,18 +98,16 @@ export default function Home() {
                 margin: "8%",
               }}
             >
-              Build stupid s#!t, get stupid prizes.
+              Baue geilen sch#!ß, gewinne die besten Preise.
             </Heading>
           </Box>
           <Box
             sx={{
-              width: "max-content",
+              width: "100%",
               backgroundImage: "url('/elements/yellow-strip@stretch.svg')",
-              background: {
-                repeat: "no-repeat",
-                size: "100% 100%",
-                width: "75%",
-              },
+              backgroundSize: "82%",
+              backgroundRepeat: "no-repeat",
+              backgroundPositionX: "2.5rem",
               position: "relative",
               zIndex: 30,
               top: "-15%",
@@ -134,7 +130,7 @@ export default function Home() {
                 fontSize: ["1.2em", "1.4em"],
               }}
             >
-              100+&nbsp;Cities&nbsp;worldwide&nbsp;March&nbsp;15-16
+              In&nbsp;über&nbsp;100+&nbsp;Städten&nbsp;Weltweit&nbsp;am&nbsp;15-16&nbsp;März
             </Heading>
             <Heading
               as="h2"
@@ -149,7 +145,7 @@ export default function Home() {
                 fontSize: ["1.2em", "1.4em"],
               }}
             >
-              Los&nbsp;Angeles&nbsp;February&nbsp;15-16
+              Das&nbsp;Pilot-Event&nbsp;in&nbsp;Los&nbsp;Angeles&nbsp;am&nbsp;15-16&nbsp;Februar&nbsp;
             </Heading>
           </Box>
         </Box>
@@ -292,7 +288,7 @@ export default function Home() {
             sx={{
               maxWidth: ["80vw", "60vw", "40vw"],
               padding: "40px",
-              zIndex: 1,
+              zIndex: 5,
               backgroundImage: "url(/elements/sticky-note.svg)",
               backgroundSize: "cover",
               filter: "drop-shadow(5px 5px 5px #000000AA)",
@@ -301,23 +297,27 @@ export default function Home() {
             <Heading
               sx={{
                 textDecoration: "underline",
+                fontFamily: "moonblossom",
+                fontWeight: 800,
               }}
             >
-              What&apos;s Scrapyard?
+              Was ist Scrapyard?
             </Heading>
             <p
               style={{
+                fontFamily: "p22-stanyan",
                 fontSize: "1.5em",
               }}
             >
-              Scrapyard is a global hackathon organized by high schoolers. Our
-              flagship (the largest Scrapyard event) will run in Los Angeles on
-              February 15th-16th. Following the flagship, our distributed events
-              will run in 100+ cities worldwide on the weekend of March 15th.
-              Scrapyard is a hackathon with a &quot;scrappy&quot; theme of
-              stupid inventions! It&apos;s organized by Hack Club, a{" "}
-              <Nonprofit501c3 /> nonprofit that supports a global community of
-              over 48,000 high school makers.
+              Scrapyard ist ein globaler Hackathon, der von Schülern organisiert
+              wird. Unser Flaggschiff (das größte Scrapyard-Event) findet am
+              15.-16. Februar in Los Angeles statt. Nach dem Flaggschiff werden
+              unsere dezentralen Veranstaltungen am Wochenende des 15. März in
+              über 100 Städten weltweit stattfinden. Scrapyard ist ein Hackathon
+              mit einem &quot;schrottreichen&quot; Thema von dummen Erfindungen!
+              Es wird von Hack Club, einer <Nonprofit501c3 />
+              -Nonprofit-Organisation, die eine globale Gemeinschaft von über
+              48.000 Schüler-Machern unterstützt, organisiert.
             </p>
           </Box>
         </Box>
@@ -347,7 +347,7 @@ export default function Home() {
           />
           <Image
             src="/elements/doodles/bluesquiggle.svg"
-            sx={{ position: "absolute", left: "8%", top: "84%" }}
+            sx={{ position: "absolute", left: "8%", top: "84%", zIndex: 7 }}
             alt="Blue Squiggle"
           />
           <Image
@@ -362,12 +362,12 @@ export default function Home() {
           />
           <Image
             src="/elements/doodles/pinksquiggle.svg"
-            sx={{ position: "absolute", right: "10%", top: "80%" }}
+            sx={{ position: "absolute", right: "10%", top: "80%", zIndex: 7 }}
             alt="Pink Squiggle"
           />
           <Image
             src="/elements/doodles/bluedrops.svg"
-            sx={{ position: "absolute", right: "10%", top: "0%" }}
+            sx={{ position: "absolute", right: "10%", top: "0%", zIndex: 7 }}
             alt="Blue Drops"
           />
         </Box>
@@ -390,55 +390,6 @@ export default function Home() {
       ></Box>
 
       <Box></Box>
-
-      <Box
-        sx={{
-          // backgroundImage: "url(/backgrounds/confetti.png)",
-          alignItems: "center",
-          display: "flex",
-          flexDirection: "column",
-        }}
-      >
-        <Box
-          sx={{
-            backgroundImage: "url(/elements/ripped-paper-strip.svg)",
-            // backgroundSize: "cover!important",
-            // display: "block",
-            // width: "30vw",
-            height: "30vh",
-            width: ["90vw", "70vw", "46.8vw"],
-            alignItems: "center",
-            justifyContent: "center",
-            margin: "0vh",
-            backgroundRepeat: "no-repeat",
-            backgroundSize: "cover",
-          }}
-        >
-          <Heading
-            as="h1"
-            sx={{
-              mt: "13vh",
-              mx: "1vw",
-              fontWeight: "lighter",
-              textAlign: "center",
-            }}
-          >
-            FIND AN EVENT NEAR YOU!
-          </Heading>
-        </Box>
-        <Box
-          sx={{
-            width: "80%",
-            height: "75vh",
-            alignItems: "center",
-            display: "flex",
-            flexDirection: "column",
-            mb: "10vh",
-          }}
-        >
-          <Map full />
-        </Box>
-      </Box>
 
       <Box
         sx={{
@@ -497,15 +448,16 @@ export default function Home() {
                 as="h2"
                 sx={{
                   textAlign: "center",
+                  fontFamily: "moonblossom",
+                  fontWeight: 800,
                 }}
               >
-                Here&apos;s what we&apos;ve done in the past
+                Hier ist was wir schon in der Vergangenheit veranstaltet haben
               </Heading>
             </Box>
           </Box>
           <Link href="https://assemble.hackclub.com" target="_blank">
             <Box
-              as="a"
               sx={{
                 background: "url('/elements/polaroids/assemble.png')",
                 width: ["35.5vw", "35.5vw", "22.5vw"],
@@ -519,7 +471,6 @@ export default function Home() {
           </Link>
           <Link href="https://outernet.hackclub.com" target="_blank">
             <Box
-              as="a"
               sx={{
                 background: "url('/elements/polaroids/outernet.png')",
                 width: ["35.5vw", "35.5vw", "22.5vw"],
@@ -534,7 +485,6 @@ export default function Home() {
           </Link>
           <Link href="https://wonderland.hackclub.com" target="_blank">
             <Box
-              as="a"
               sx={{
                 background: "url('/elements/polaroids/wonderland.png')",
                 width: ["35.5vw", "35.5vw", "22.5vw"],
@@ -548,7 +498,6 @@ export default function Home() {
           </Link>
           <Link href="https://apocalypse.hackclub.com" target="_blank">
             <Box
-              as="a"
               sx={{
                 background: "url('/elements/polaroids/apocalypse.png')",
                 width: ["35.5vw", "35.5vw", "22.5vw"],
@@ -563,7 +512,6 @@ export default function Home() {
           </Link>
           <Link href="https://counterspell.hackclub.com" target="_blank">
             <Box
-              as="a"
               sx={{
                 background: "url('/elements/polaroids/counterspell.png')",
                 width: ["38.5vw", "38.5vw", "25vw"],
@@ -602,9 +550,11 @@ export default function Home() {
           sx={{
             mb: 5,
             position: "relative",
+            fontFamily: "moonblossom",
+            fontWeight: 800,
           }}
         >
-          Frequently Asked Questions
+          Häufig gestellte Fragen
           <Image
             src="/elements/doodles/blue-underline.svg"
             sx={{
@@ -624,110 +574,171 @@ export default function Home() {
           }}
         >
           {Object.entries({
-            "What is Scrapyard?": (
+            "Was ist Scrapyard Hamburg?": (
               <>
-                Scrapyard is a global{" "}
+                Scrapyard ist ein globaler{" "}
                 <Link href="https://hackclub.com/hackathons/" target="_blank">
-                  hackathon
+                  Hackathon
                 </Link>{" "}
-                running in Los Angeles and 100+ other cities by high schoolers
-                (like{" "}
+                der in Los Angeles und über 100 anderen Städten von Schülern
+                organisiert wird (wie{" "}
                 <Link href="https://counterspell.hackclub.com/" target="_blank">
                   Counterspell
                 </Link>
-                ) with a “scrappy” theme of stupid inventions! It&apos;s
-                organized by{" "}
+                ) mit einem &quot;schrottreichen&quot; Thema von dummen
+                Erfindungen! Es wird von{" "}
                 <Link href="https://hackclub.com/" target="_blank">
                   Hack Club
                 </Link>
-                , a <Nonprofit501c3 /> nonprofit that supports a global
-                community of 48k high school makers.
+                , einer <Nonprofit501c3 />
+                -Nonprofit-Organisation, die eine globale Gemeinschaft von über
+                48.000 Schüler-Machern unterstützt, organisiert.
               </>
             ),
 
-            "Where is Scrapyard hosted?": (
+            "Wo wird Scrapyard Hamburg veranstaltet?": (
               <>
-                The Scrapyard flagship will be hosted in Los Angeles,
-                tentatively on February 15-16 (Location TBD). Find the closest
-                distributed event to you on March 15-16!
+                Scrapyard Hamburg, wie der Name schon sagt, wird in Hamburg
+                stattfinden. Wir suchen allerdings noch nach einem geeigneten
+                Veranstaltungsort. Wir werden euch bald mitteilen, wo genau es
+                stattfinden wird.
               </>
             ),
-            "Who can participate in Scrapyard?": (
+            "Wer darf bei Scrapyard teilnehmen?": (
               <>
-                All high-school & upper-middle-school aged students are welcome
-                to come! You don&apos;t have to be a member of the Hack Club
-                community or be a Hack Club leader.
+                Alle Schüler der Oberstufe und der Mittelschule sind willkommen!
+                Du musst nicht Mitglied der Hack Club-Gemeinschaft sein oder ein
+                Hack Club-Leiter sein.
               </>
             ),
-            "All this, for free?": (
+            "Das alles, Kostenlos???": (
               <>
-                Yep! Food, swag and good vibes are all included. Plus, if
-                you&apos;re joining us from afar, we&apos;ll cover the cost of
-                gas or a bus / train ticket. Information about travel stipends
-                for our Los Angeles flagship will be released soon.
+                Ja! Essen, Swag und gute Stimmung sind alle inklusive. Außerdem,
+                wenn du von weit her zu uns kommst, übernehmen wir die Kosten
+                für Benzin oder ein Bus- / Zugticket. Informationen über
+                Reisekostenzuschüsse für unser Flaggschiff in Los Angeles werden
+                bald veröffentlicht. <br />
+                <Link
+                  href="mailto:jack.hamburg@scrapyard.hackclub.com?subject=Frage%20zu%20Kosten%20bei%20Scrapyard%20Hamburg"
+                  style={{
+                    textDecoration: "underline",
+                    textDecorationStyle: "wavy",
+                  }}
+                >
+                  Falls du dazu fragen hast schreib mich an!
+                </Link>
               </>
             ),
-            "What do I need?": (
+            "Was brauch ich?": (
               <>
-                Your laptop, chargers, toiletries, sleeping bags, and an open
-                mind! If you plan to work on a hardware project, bring the tools
-                you&apos;ll need.
+                Dein Laptop, Ladegeräte, Toilettenartikel, Schlafsäcke und ein
+                offener Geist! Wenn du an einem Hardware-Projekt arbeiten
+                möchtest, bring die Werkzeuge mit, die du benötigst. Wir planen
+                möglicherweise, Ersatz-Laptops bereitzustellen, allerdings ist
+                das noch nicht bestätigt. Bei Hardware-Projekten planen wir
+                möglicherweise auch, einen 3D-Drucker bereitzustellen.
               </>
             ),
-            "I&apos;m not good at coding. Can I still participate?": (
+            "Ich bin ein schrecklicher Programmierer. Kann ich trotzdem mitmachen?":
+              (
+                <>
+                  Dieser Hackathon ist für Kreative aller Fähigkeitsstufen! Wir
+                  werden Workshops und andere Veranstaltungen anbieten, also
+                  komm mit und lass uns gemeinsam lernen. Wenn du einige
+                  einführende Projekte erkunden möchtest, schau dir die Hack
+                  Club Workshops an.
+                </>
+              ),
+            "Was kann ich den bei Scrapyard machen?": (
               <>
-                This hackathon is for creatives of all skill levels! We&apos;ll
-                have workshops and other events so join us and let&apos;s learn
-                together. If you&apos;d like to start exploring some
-                introductory projects, check out Hack Club Workshops.
+                Das schrulligste, was du dir vorstellen kannst - Das ist
+                erwünscht. Spiele? Apps? Websites? Programmiersprachen?{" "}
+                <em>Hardware?</em> Du sagst es! Wir haben eine Menge Ressourcen
+                und Mentoren, die dir dabei helfen können.
               </>
             ),
-            "What can I make at Scrapyard?": (
+            "Was hat Hackclub sonst so gemacht?": (
               <>
-                The scrappiest thing you can imagine -- jank is encouraged.
-                Games? Apps? Websites? Programming languages? <em>Hardware?</em>{" "}
-                You name it! We&apos;ll have a bunch of resources and mentors to
-                help you out.
-              </>
-            ),
-            "What has Hack Club done before?": (
-              <>
-                Hack Club has run an{" "}
+                Hack Club hat einen{" "}
                 <Link href="https://youtu.be/PnK4gzO6S3Q" target="_blank">
-                  overnight hackathon
+                  Übernachtung-Hackathon
                 </Link>{" "}
-                in San Francisco, a{" "}
+                in San Francisco, einen{" "}
                 <Link
                   href="https://www.youtube.com/watch?v=H5RPsCMl3uM"
                   target="_blank"
                 >
                   Game Jam
                 </Link>{" "}
-                across 50 cities, a hackathon on a{" "}
+                in 50 Städten, einen Hackathon auf einem{" "}
                 <Link href="https://youtu.be/2BID8_pGuqA" target="_blank">
-                  Train
+                  Zug
                 </Link>{" "}
-                from Vermont to Los Angeles, and much more!
+                von Vermont nach Los Angeles und vieles mehr veranstaltet!
               </>
             ),
-            "What if my parents are concerned?": (
+            "Was wenn meine Eltern besorgt sind?": (
               <>
-                We’re here to help! Our parents guide will be released soon, but
-                they can reach out to us at{" "}
+                Wir sind hier, um zu helfen! Unsere Prospekte für Eltern werden
+                bald veröffentlicht, aber sie können uns unter{" "}
                 <Link href="mailto:scrapyard@hackclub.com">
                   scrapyard@hackclub.com
                 </Link>{" "}
-                for questions.
+                für Fragen erreichen.
               </>
             ),
-            "What if I have more questions?": (
+            "Was wenn ich noch mehr Fragen hab?": (
               <>
-                Contact us! Feel free to reach out to us in the #scrapyard
-                channel on the Hack Club slack or email us at{" "}
-                <Link href="mailto:scrapyard@hackclub.com">
-                  scrapyard@hackclub.com
+                Kontaktiere uns! Fühl dich frei, uns im #scrapyard-Kanal auf dem
+                Hack Club Slack oder per Email an{" "}
+                <Link href="mailto:jack.hamburg@scrapyard.hackclub.com">
+                  jack.hamburg@scrapyard.hackclub.com
+                </Link>{" "}
+                zu erreichen.
+              </>
+            ),
+            "Wie kann ich euch unterstützen?": (
+              <>
+                Im allgemeinen könnt ihr uns immer unter{" "}
+                <Link
+                  href="https://hcb.hackclub.com/donations/start/scrapyard-hamburg"
+                  target="_blank"
+                  sx={{
+                    textDecoration: "underline",
+                    textDecorationStyle: "wavy",
+                  }}
+                >
+                  hcb.hackclub.com/scrapyard-hamburg
+                </Link>{" "}
+                unterstützen, falls sie aber ein Unternehmen sind, schreiben sie
+                uns doch gerne unter{" "}
+                <Link
+                  href="mailto:hamburg@scrapyard.hackclub.com"
+                  sx={{
+                    textDecoration: "underline",
+                    textDecorationStyle: "wavy",
+                  }}
+                >
+                  hamburg@scrapyard.hackclub.com
+                </Link>{" "}
+                an.
+              </>
+            ),
+            "Hat man einsicht in eure Finanzen?": (
+              <>
+                Ja, falls sie sich für unsere finanzen interessieren oder
+                einfach gucken wollt was ein Hackathon für ausgaben generiert
+                geht einfach auf{" "}
+                <Link
+                  href="https://hcb.hackclub.com/scrapyard-hamburg/transactions"
+                  target="_blank"
+                  sx={{
+                    textDecoration: "underline",
+                    textDecorationStyle: "wavy",
+                  }}
+                >
+                  hcb.hackclub.com/scrapyard-hamburg/transactions
                 </Link>
-                .
               </>
             ),
           }).map(([question, answer], i) => {
@@ -751,6 +762,8 @@ export default function Home() {
                   mb={4}
                   sx={{
                     position: "relative",
+                    fontFamily: "moonblossom",
+                    fontWeight: 800,
                   }}
                 >
                   {question}
@@ -768,7 +781,8 @@ export default function Home() {
                 <Text
                   sx={{
                     fontSize: 3,
-                    fontWeight: "bold",
+                    fontWeight: 300,
+                    fontFamily: "p22-stanyan",
                   }}
                 >
                   {answer}
@@ -782,9 +796,11 @@ export default function Home() {
           sx={{
             mt: 6,
             position: "relative",
+            fontFamily: "moonblossom",
+            fontWeight: 300,
           }}
         >
-          Scrapyard
+          Scrapyard Hamburg
           <Image
             src="/elements/doodles/pink-underline.svg"
             sx={{
@@ -816,7 +832,7 @@ export default function Home() {
           <span style={{ transform: "scale(2)" }}>・</span>{" "}
           <Link href="https://hackclub.com/slack">Slack</Link>{" "}
           <span style={{ transform: "scale(2)" }}>・</span>{" "}
-          <Link href="https://hackclub.com/clubs">Clubs</Link>{" "}
+          <Link href="https://hackclub.com/clubs">Ags</Link>{" "}
           <span style={{ transform: "scale(2)" }}>・</span>{" "}
           <Link href="https://hackclub.com/hackathons">Hackathons</Link>
         </Text>
