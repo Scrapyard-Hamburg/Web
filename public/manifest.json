@@ -1,0 +1,15 @@
+{
+  "short_name": "Scrapyard.de",
+  "name": "Scrapyard Hamburg",
+  "icons": [
+    {
+      "src": "/icon.svg",
+      "sizes": "120x120",
+      "type": "image/svg+xml"
+    }
+  ],
+  "start_url": "/",
+  "background_color": "#fff",
+  "description": "Scrapyard Hamburg, der einzige von Schülern organisierte Hackathon Deutschlands",
+  "categories": []
+}
