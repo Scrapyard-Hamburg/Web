@@ -28,6 +28,29 @@ const Flag = () => (
   </Link>
 );
 
+const Backlink = () => (
+  <Link
+    href="/official"
+    target="_blank"
+    aria-label="Hack Club's homepage"
+    sx={{
+      position: "absolute",
+      top: 3,
+      right: 4,
+      zIndex: 2,
+      fontFamily: "moonblossom",
+      fontWeight: 700,
+      textDecoration: "underline",
+      textDecorationThickness: 2,
+      ":hover": {
+        textDecorationStyle: "wavy",
+      },
+    }}
+  >
+    Official / English Version
+  </Link>
+);
+
 export default function Home() {
   return (
     <Box
@@ -45,6 +68,7 @@ export default function Home() {
         <title>Scrapyard Hamburg</title>
       </Head>
       <Flag />
+      <Backlink />
       <Box
         sx={{
           width: "100%",
@@ -577,17 +601,41 @@ export default function Home() {
             "Was ist Scrapyard Hamburg?": (
               <>
                 Scrapyard ist ein globaler{" "}
-                <Link href="https://hackclub.com/hackathons/" target="_blank">
+                <Link
+                  href="https://hackclub.com/hackathons/"
+                  target="_blank"
+                  sx={{
+                    textDecoration: "underline",
+                    color: "#337D78",
+                    textDecorationStyle: "wavy",
+                  }}
+                >
                   Hackathon
                 </Link>{" "}
                 der in Los Angeles und über 100 anderen Städten von Schülern
                 organisiert wird (wie{" "}
-                <Link href="https://counterspell.hackclub.com/" target="_blank">
+                <Link
+                  href="https://counterspell.hackclub.com/"
+                  target="_blank"
+                  sx={{
+                    textDecoration: "underline",
+                    color: "#337D78",
+                    textDecorationStyle: "wavy",
+                  }}
+                >
                   Counterspell
                 </Link>
                 ) mit einem &quot;schrottreichen&quot; Thema von dummen
                 Erfindungen! Es wird von{" "}
-                <Link href="https://hackclub.com/" target="_blank">
+                <Link
+                  href="https://hackclub.com/"
+                  target="_blank"
+                  sx={{
+                    textDecoration: "underline",
+                    color: "#337D78",
+                    textDecorationStyle: "wavy",
+                  }}
+                >
                   Hack Club
                 </Link>
                 , einer <Nonprofit501c3 />
@@ -620,8 +668,9 @@ export default function Home() {
                 bald veröffentlicht. <br />
                 <Link
                   href="mailto:jack.hamburg@scrapyard.hackclub.com?subject=Frage%20zu%20Kosten%20bei%20Scrapyard%20Hamburg"
-                  style={{
+                  sx={{
                     textDecoration: "underline",
+                    color: "#337D78",
                     textDecorationStyle: "wavy",
                   }}
                 >
@@ -660,18 +709,39 @@ export default function Home() {
             "Was hat Hackclub sonst so gemacht?": (
               <>
                 Hack Club hat einen{" "}
-                <Link href="https://youtu.be/PnK4gzO6S3Q" target="_blank">
+                <Link
+                  href="https://youtu.be/PnK4gzO6S3Q"
+                  target="_blank"
+                  sx={{
+                    textDecoration: "underline",
+                    color: "#337D78",
+                    textDecorationStyle: "wavy",
+                  }}
+                >
                   Übernachtung-Hackathon
                 </Link>{" "}
                 in San Francisco, einen{" "}
                 <Link
                   href="https://www.youtube.com/watch?v=H5RPsCMl3uM"
                   target="_blank"
+                  sx={{
+                    textDecoration: "underline",
+                    color: "#337D78",
+                    textDecorationStyle: "wavy",
+                  }}
                 >
                   Game Jam
                 </Link>{" "}
                 in 50 Städten, einen Hackathon auf einem{" "}
-                <Link href="https://youtu.be/2BID8_pGuqA" target="_blank">
+                <Link
+                  href="https://youtu.be/2BID8_pGuqA"
+                  target="_blank"
+                  sx={{
+                    textDecoration: "underline",
+                    color: "#337D78",
+                    textDecorationStyle: "wavy",
+                  }}
+                >
                   Zug
                 </Link>{" "}
                 von Vermont nach Los Angeles und vieles mehr veranstaltet!
@@ -681,7 +751,14 @@ export default function Home() {
               <>
                 Wir sind hier, um zu helfen! Unsere Prospekte für Eltern werden
                 bald veröffentlicht, aber sie können uns unter{" "}
-                <Link href="mailto:scrapyard@hackclub.com">
+                <Link
+                  href="mailto:scrapyard@hackclub.com"
+                  sx={{
+                    textDecoration: "underline",
+                    color: "#337D78",
+                    textDecorationStyle: "wavy",
+                  }}
+                >
                   scrapyard@hackclub.com
                 </Link>{" "}
                 für Fragen erreichen.
@@ -691,7 +768,14 @@ export default function Home() {
               <>
                 Kontaktiere uns! Fühl dich frei, uns im #scrapyard-Kanal auf dem
                 Hack Club Slack oder per Email an{" "}
-                <Link href="mailto:jack.hamburg@scrapyard.hackclub.com">
+                <Link
+                  href="mailto:jack.hamburg@scrapyard.hackclub.com"
+                  sx={{
+                    textDecoration: "underline",
+                    color: "#337D78",
+                    textDecorationStyle: "wavy",
+                  }}
+                >
                   jack.hamburg@scrapyard.hackclub.com
                 </Link>{" "}
                 zu erreichen.
@@ -705,6 +789,7 @@ export default function Home() {
                   target="_blank"
                   sx={{
                     textDecoration: "underline",
+                    color: "#337D78",
                     textDecorationStyle: "wavy",
                   }}
                 >
@@ -716,6 +801,7 @@ export default function Home() {
                   href="mailto:hamburg@scrapyard.hackclub.com"
                   sx={{
                     textDecoration: "underline",
+                    color: "#337D78",
                     textDecorationStyle: "wavy",
                   }}
                 >
@@ -734,6 +820,7 @@ export default function Home() {
                   target="_blank"
                   sx={{
                     textDecoration: "underline",
+                    color: "#337D78",
                     textDecorationStyle: "wavy",
                   }}
                 >
