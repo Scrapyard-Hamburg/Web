@@ -1,21 +1,58 @@
-Willkommen bei Scrapyard Hamburg!
+# Scrapyard Hamburg 🚀
 
-Scrapyard Hamburg ist ein Online-Portal, das Informationen und Ressourcen für die Community bereitstellt. Auf unserer Hauptseite findest du eine Übersicht über unsere Aktivitäten und Projekte.
+Scrapyard Hamburg ist ein globaler Hackathon, der von Schülern organisiert wird, mit einem einzigartigen Schwerpunkt auf Kreativität, Spaß und Innovation. Unser Motto: **"Baue geilen Sch#!ß, gewinne die besten Preise."**
 
-## Häufig gestellte Fragen
+## 🌟 Über Scrapyard
 
-### Wie kann ich mitmachen?
+Scrapyard ist Teil einer weltweiten Veranstaltungsreihe, die in über 100 Städten gleichzeitig stattfindet. Das größte Event startet am 15.–16. Februar in Los Angeles, gefolgt von dezentralen Veranstaltungen am Wochenende des 15. März – darunter auch Scrapyard Hamburg!
 
-Du kannst auf verschiedene Weise mitmachen: indem du unsere Veranstaltungen besuchst, indem du dich an unseren Projekten beteiligst oder indem du uns einfach kontaktierst, um mehr über unsere Arbeit zu erfahren.
+Unser Hackathon richtet sich an Jugendliche aller Fähigkeitsstufen und kombiniert Technologie mit schrottreichen, lustigen Themen. Ob Anfänger oder Profi, jeder ist willkommen!
 
-### Was sind die Ziele von Scrapyard Hamburg?
+---
 
-Unser Ziel ist es, eine Plattform für die Community zu schaffen, auf der Menschen sich austauschen, lernen und voneinander profitieren können. Wir wollen eine offene und inklusive Atmosphäre schaffen, in der jeder willkommen ist.
+## 📍 Veranstaltungsdetails
 
-### Wie kann ich mich an euren Projekten beteiligen?
+- **Datum:** 15.–16. März
+- **Ort:** Wird noch bekanntgegeben (Hamburg)
+- **Zielgruppe:** Schüler der Mittel- und Oberstufe
 
-Wir haben verschiedene Projekte, an denen du dich beteiligen kannst. Schau dir unsere Projektseite an, um mehr über unsere aktuellen Projekte zu erfahren. Wenn du Interesse hast, dich an einem Projekt zu beteiligen, kontaktiere uns einfach.
+---
 
-## Kontakt
+## 🎉 Highlights
 
-Wenn du mehr über Scrapyard Hamburg erfahren möchtest oder dich an einem unserer Projekte beteiligen möchtest, kontaktiere uns einfach über unser Kontaktformular. Wir freuen uns darauf, von dir zu hören!
+- Einzigartiges Thema: Schrottreiche, schräge Erfindungen
+- Kostenlose Teilnahme inkl. Essen, Swag und guter Laune
+- Unterstützung für Reisekosten (Benzin/Zug/Bus-Tickets)
+- Mentoren und Workshops für alle Fähigkeitsstufen
+
+---
+
+## 💡 Häufig gestellte Fragen
+
+**Was ist Scrapyard Hamburg?**  
+Scrapyard Hamburg ist ein Schüler-Hackathon mit Fokus auf Kreativität und ungewöhnliche Erfindungen. Organisiert von Hack Club und unterstützt von der globalen Hackathon-Community.
+
+**Wer kann teilnehmen?**  
+Alle Schüler der Mittel- und Oberstufe sind willkommen – unabhängig von Vorkenntnissen.
+
+**Wie melde ich mich an?**  
+Anmeldelinks und weitere Informationen folgen bald auf unserer Webseite.
+
+**Was kostet die Teilnahme?**  
+Nichts! Scrapyard Hamburg ist komplett kostenlos, inklusive Verpflegung und Reisekostenzuschüssen.
+
+Weitere Fragen? Schreib uns an:  
+📧 [jack.hamburg@scrapyard.hackclub.com](mailto:jack.hamburg@scrapyard.hackclub.com)
+
+---
+
+## 💖 Unterstütze uns!
+
+Scrapyard Hamburg wird durch die großzügige Unterstützung von Sponsoren und Spenden ermöglicht. Hilf uns, dieses Event noch besser zu machen:
+
+- [Spendenlink](https://hcb.hackclub.com/donation/start/scrapyard-hamburg)
+
+---
+
+**Made with ❤️ by @DJL**  
+Mehr Infos: [scrapyard.de](http://scrapyard.de) (_This link is Inactive!_)
