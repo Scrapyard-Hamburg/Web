@@ -11,11 +11,11 @@
     "prefix": ""
   },
   "aliases": {
-    "components": ">comp",
-    "utils": "§",
-    "ui": ">ui",
-    "lib": "L§",
-    "hooks": "~"
+    "components": "@/components",
+    "utils": "@/lib/utils",
+    "ui": "@/components/ui",
+    "lib": "@/lib",
+    "hooks": "@/hooks"
   },
   "iconLibrary": "feather-react"
 }
