@@ -2140,7 +2140,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@radix-ui/react-slot@npm:1.1.1, @radix-ui/react-slot@npm:^1.1.0":
+"@radix-ui/react-slot@npm:1.1.1, @radix-ui/react-slot@npm:^1.1.0, @radix-ui/react-slot@npm:^1.1.1":
   version: 1.1.1
   resolution: "@radix-ui/react-slot@npm:1.1.1"
   dependencies:
@@ -6799,6 +6799,16 @@ __metadata:
   languageName: node
   linkType: hard
 
+"next-themes@npm:^0.4.4":
+  version: 0.4.4
+  resolution: "next-themes@npm:0.4.4"
+  peerDependencies:
+    react: ^16.8 || ^17 || ^18 || ^19 || ^19.0.0-rc
+    react-dom: ^16.8 || ^17 || ^18 || ^19 || ^19.0.0-rc
+  checksum: 10c3/a95fc4f13c5453b782364bb6a58a89b4dc37071d561376366daf10c8de3b838e98bbde04a39ebb9e23b361e2c9f0d8edff6cf762473a05e9018a92afb06664c2
+  languageName: node
+  linkType: hard
+
 "next@npm:15.1.1-canary.21":
   version: 15.1.1-canary.21
   resolution: "next@npm:15.1.1-canary.21"
@@ -7975,6 +7985,7 @@ __metadata:
     "@hackclub/theme": "npm:^0.3.3"
     "@jackatdjl/djl-ui": "npm:0.5.2-canary.13"
     "@next/mdx": "npm:^15.1.4"
+    "@radix-ui/react-slot": "npm:^1.1.1"
     "@sentry/nextjs": "npm:8"
     "@types/leaflet": "npm:^1"
     "@types/node": "npm:^20"
@@ -7988,10 +7999,12 @@ __metadata:
     leaflet: "npm:^1.9.4"
     lucide-react: "npm:^0.473.0"
     next: "npm:15.1.4"
+    next-themes: "npm:^0.4.4"
     postcss: "npm:^8"
     react: "npm:^19.0.0"
     react-dom: "npm:^19.0.0"
     react-leaflet: "npm:^5.0.0"
+    sonner: "npm:^1.7.2"
     tailwind-merge: "npm:^2.6.0"
     tailwindcss: "npm:^3.4.1"
     tailwindcss-animate: "npm:^1.0.7"
@@ -8260,6 +8273,16 @@ __metadata:
     react: ^18.0.0 || ^19.0.0 || ^19.0.0-rc
     react-dom: ^18.0.0 || ^19.0.0 || ^19.0.0-rc
   checksum: 10c3/d9d184af9c8cc83f3ea42c73a3f9dee6f1cf91ec0ee8dcba7342471091abe45e2df1967086a66bee8bf4f6f85bc5152449badf88307b47cda395ed537238bf67
+  languageName: node
+  linkType: hard
+
+"sonner@npm:^1.7.2":
+  version: 1.7.2
+  resolution: "sonner@npm:1.7.2"
+  peerDependencies:
+    react: ^18.0.0 || ^19.0.0 || ^19.0.0-rc
+    react-dom: ^18.0.0 || ^19.0.0 || ^19.0.0-rc
+  checksum: 10c3/f06b6b4d8615ab94314e7753184d3da2b4d59c984a4d8ab968c8c6501e8da7bd78520c5ccb07d26647bb4ab07cc4bbd629964bbe7d9f529b91af3a3191ea3592
   languageName: node
   linkType: hard
 

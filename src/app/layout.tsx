@@ -1,6 +1,7 @@
 /* eslint-disable @next/next/no-page-custom-font */
 import type { Metadata } from "next";
 import "./globals.css";
+import { Toaster } from "@/components/ui/sonner";
 
 export const metadata: Metadata = {
   title: "Scrapyard Hamburg",
@@ -66,7 +67,10 @@ export default function RootLayout({
           href="https://use.typekit.net/eml6dsh.css"
         ></link>
       </head>
-      <body className={`antialiased`}>{children}</body>
+      <body className={`antialiased`}>
+        <Toaster />
+        {children}
+      </body>
     </html>
   );
 }
