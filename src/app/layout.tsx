@@ -1,5 +1,6 @@
 /* eslint-disable @next/next/no-page-custom-font */
 import type { Metadata } from "next";
+import { Toaster } from "@/components/ui/sonner";
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -66,7 +67,10 @@ export default function RootLayout({
           href="https://use.typekit.net/eml6dsh.css"
         ></link>
       </head>
-      <body className={`antialiased`}>{children}</body>
+      <body className={`antialiased bg-background text-foreground`}>
+        <Toaster />
+        {children}
+      </body>
     </html>
   );
 }
