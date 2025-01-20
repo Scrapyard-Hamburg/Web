@@ -5661,6 +5661,28 @@ __metadata:
   languageName: node
   linkType: hard
 
+"framer-motion@npm:^12.0.0":
+  version: 12.0.0
+  resolution: "framer-motion@npm:12.0.0"
+  dependencies:
+    motion-dom: "npm:^12.0.0"
+    motion-utils: "npm:^12.0.0"
+    tslib: "npm:^2.4.0"
+  peerDependencies:
+    "@emotion/is-prop-valid": "*"
+    react: ^18.0.0 || ^19.0.0
+    react-dom: ^18.0.0 || ^19.0.0
+  peerDependenciesMeta:
+    "@emotion/is-prop-valid":
+      optional: true
+    react:
+      optional: true
+    react-dom:
+      optional: true
+  checksum: 10c3/8aaeeeae1fc341ed99d77e765565ef8eed9e8cbfa0427f251d748a779ed21abcca74e6efc285cf3636e9e44d8f244a289b2fddffd361c25a1946c81204b5c31a
+  languageName: node
+  linkType: hard
+
 "fs-minipass@npm:^3.0.0":
   version: 3.0.3
   resolution: "fs-minipass@npm:3.0.3"
@@ -6997,10 +7019,47 @@ __metadata:
   languageName: node
   linkType: hard
 
+"motion-dom@npm:^12.0.0":
+  version: 12.0.0
+  resolution: "motion-dom@npm:12.0.0"
+  dependencies:
+    motion-utils: "npm:^12.0.0"
+  checksum: 10c3/fb5b7be9b07b687b7f4390a88320264a3e079186440df836fadbb301d0ae79d78bf9db22857403aca597a1bb6522913cdf5e07a34542ef020885a70ca9f4da05
+  languageName: node
+  linkType: hard
+
 "motion-utils@npm:^11.16.0":
   version: 11.16.0
   resolution: "motion-utils@npm:11.16.0"
   checksum: 10c3/32d09fbdec0436bbbedb065cc980fa7830c81a75bf3fef72f71b6263a12b9d72fb57199488440f3b26c1fdea876f64beb891c59fb519c4d34eabcb387bf29035
+  languageName: node
+  linkType: hard
+
+"motion-utils@npm:^12.0.0":
+  version: 12.0.0
+  resolution: "motion-utils@npm:12.0.0"
+  checksum: 10c3/acadb2eeccc74635ef08d4037091bb7255ffce23358fb5bc8868182bcf020fc30ec3c0975d14fe37a23f7fe5c3e2f96ddf927f648ef1472190bd57b2da0d610b
+  languageName: node
+  linkType: hard
+
+"motion@npm:^12.0.0":
+  version: 12.0.0
+  resolution: "motion@npm:12.0.0"
+  dependencies:
+    framer-motion: "npm:^12.0.0"
+    tslib: "npm:^2.4.0"
+  peerDependencies:
+    "@emotion/is-prop-valid": "*"
+    react: ^18.0.0 || ^19.0.0
+    react-dom: ^18.0.0 || ^19.0.0
+  peerDependenciesMeta:
+    "@emotion/is-prop-valid":
+      optional: true
+    react:
+      optional: true
+    react-dom:
+      optional: true
+  checksum: 10c3/04b574e2b176349d268064563e84569e0edc7fa01e4b09b9e831cb03bf4dc877fddd898489d1d759328937653fd9b72c9b7fa557ef3730b3f9b02a9a504934be
   languageName: node
   linkType: hard
 
@@ -7913,6 +7972,16 @@ __metadata:
   languageName: node
   linkType: hard
 
+"react-spinners@npm:^0.15.0":
+  version: 0.15.0
+  resolution: "react-spinners@npm:0.15.0"
+  peerDependencies:
+    react: ^16.0.0 || ^17.0.0 || ^18.0.0 || ^19.0.0
+    react-dom: ^16.0.0 || ^17.0.0 || ^18.0.0 || ^19.0.0
+  checksum: 10c3/20ec2ec56a1fe518105acfc06d1aa8eac225839c15b3d6764db0fcdc3df0e1118f133ea7e687944cbbaa536a95a6e5b0e27ab5f1ffaaaee401510fe4073c0a43
+  languageName: node
+  linkType: hard
+
 "react-style-singleton@npm:^2.2.1, react-style-singleton@npm:^2.2.2":
   version: 2.2.3
   resolution: "react-style-singleton@npm:2.2.3"
@@ -8303,12 +8372,14 @@ __metadata:
     leaflet: "npm:^1.9.4"
     lucide-react: "npm:^0.473.0"
     mini-svg-data-uri: "npm:^1.4.4"
+    motion: "npm:^12.0.0"
     next: "npm:15.1.4"
     next-themes: "npm:^0.4.4"
     postcss: "npm:^8"
     react: "npm:^19.0.0"
     react-dom: "npm:^19.0.0"
     react-leaflet: "npm:^5.0.0"
+    react-spinners: "npm:^0.15.0"
     recharts: "npm:^2.15.0"
     sonner: "npm:^1.7.2"
     tailwind-merge: "npm:^2.6.0"
