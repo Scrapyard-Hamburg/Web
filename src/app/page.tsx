@@ -791,7 +791,7 @@ export default function Home() {
               <>
                 Im allgemeinen könnt ihr uns immer unter{" "}
                 <Link
-                  href="https://hcb.hackclub.com/donations/start/scrapyard-hamburg"
+                  href="https://hcb.hackclub.com/donations/start/hamburg"
                   target="_blank"
                   sx={{
                     textDecoration: "underline",
@@ -822,7 +822,7 @@ export default function Home() {
                 einfach gucken wollt was ein Hackathon für ausgaben generiert
                 geht einfach auf{" "}
                 <Link
-                  href="https://hcb.hackclub.com/scrapyard-hamburg/transactions"
+                  href="https://hcb.hackclub.com/hamburg/transactions"
                   target="_blank"
                   sx={{
                     textDecoration: "underline",
