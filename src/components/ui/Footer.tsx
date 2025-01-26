@@ -1,4 +1,5 @@
 import { Box, Heading, Image, Link, Text } from "theme-ui";
+import LL from "next/link";
 
 const Footer = ({ noBg }: { noBg?: boolean }) => {
   return (
@@ -28,7 +29,9 @@ const Footer = ({ noBg }: { noBg?: boolean }) => {
           fontWeight: 300,
         }}
       >
-        Scrapyard Hamburg
+        <LL href="/" prefetch>
+          Scrapyard Hamburg
+        </LL>
         <Image
           src="/elements/doodles/pink-underline.svg"
           sx={{
